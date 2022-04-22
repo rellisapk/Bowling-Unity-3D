@@ -21,6 +21,10 @@ public class Menu : MonoBehaviour
         SceneManager.LoadScene(sceneName);
     }
 
+    public void HalloweenScene(string sceneName){
+        SceneManager.LoadScene(sceneName);
+    }
+
     public void Exit(){
         Application.Quit();
     }

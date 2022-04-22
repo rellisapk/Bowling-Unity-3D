@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Skins.unity
     guid: 836764dd7fb437e45a0c89eab0f13611
+  - enabled: 1
+    path: Assets/Scenes/HalloweenScene.unity
+    guid: 2116a58be8ca34e4bb403d137f567397
   m_configObjects: {}
