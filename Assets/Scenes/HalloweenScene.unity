@@ -1668,6 +1668,12 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &1737881335 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -1018664272722485354, guid: 3c1f701193b46064da244c799f4952a0,
+    type: 3}
+  m_PrefabInstance: {fileID: 1737881332}
+  m_PrefabAsset: {fileID: 0}
 --- !u!23 &1737881336
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1720,13 +1726,28 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1737881333}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d8662edae8091be48b7c3720993e1572, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ballSpeed: 1000
   moveSpeed: 10
+  PumpkinSpawn: {fileID: 1737881337}
+--- !u!114 &1737881339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1737881335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8662edae8091be48b7c3720993e1572, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ballSpeed: 1000
+  moveSpeed: 5
   PumpkinSpawn: {fileID: 1737881337}
 --- !u!1 &1782390257
 GameObject:
