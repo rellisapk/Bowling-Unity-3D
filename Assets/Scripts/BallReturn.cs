@@ -26,7 +26,7 @@ public class BallReturn : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.getComponent<RollBall>() != null)
+        if (other.gameObject.GetComponent<RollBall>() != null)
         {
             doUpdate = true;
             other.gameObject.SendMessage("Reset", _ball, SendMessageOptions.DontRequireReceiver);

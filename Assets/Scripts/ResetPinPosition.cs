@@ -17,7 +17,7 @@ public class ResetPinPosition : MonoBehaviour
     {
         gameObject.transform.position = position;
         gameObject.transform.rotation = rotation;
-        gameObject.GetComponent<RigidBody>().velocity = Vector3.zero;
-        gameObject.GetComponent<RigidBody>().AngularVelocity = Vector3.zero;
+        gameObject.GetComponent<Rigidbody>().velocity = Vector3.zero;
+        gameObject.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
     }
 }

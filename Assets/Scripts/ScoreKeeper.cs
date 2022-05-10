@@ -15,19 +15,19 @@ public class ScoreKeeper : MonoBehaviour
 
     void Start()
     {
-        DownPins.Celar();
+        DownPins.Clear();
         Frames.Add(new BowlingFrame(0));
     }
 
     int getDownPins()
     {
         int down = 0;
-        foreach (GameObject g in GameObject.FIndGameObjectsWithTag("pin"))
+        foreach (GameObject g in GameObject.FindGameObjectsWithTag("pin"))
         {
-            if(g.GetComponent<RigidBody>().velocity.magnitude < .1f)
+            if(g.GetComponent<Rigidbody>().velocity.magnitude < .1f)
             {
                 Matrix4x4 m = g.transform.localToWorldMatrix;
-                Vector3 uv = m.MultiplayerVector(Vector3.up).normalized;
+                Vector3 uv = m.MultiplyVector(Vector3.up).normalized;
 
                 if (uv.y < .707)
                 {
@@ -62,7 +62,7 @@ public class ScoreKeeper : MonoBehaviour
         _FrameBall = 0;
         _Frame = Frames.Count;
         DownPins.Clear();
-        gameObject.SendMessage("ResetFrame", SendMEssageOptions.RequireReceiver);
+        gameObject.SendMessage("ResetFrame", SendMessageOptions.RequireReceiver);
         _Score = BowlingFrame.Score(Frames);
     }
 }
@@ -110,7 +110,7 @@ public class BowlingFrame
             if (f.Carry > 0) score += f.Score1;
             if (f.Carry > 1) score += f.Score2;
         }
-    }
 
-    return score;
+        return score;
+    }
 }
