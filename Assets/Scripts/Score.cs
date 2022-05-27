@@ -18,7 +18,8 @@ public class Score : MonoBehaviour
         
         foreach (var item in pin)
         {
-            if (item.PinJatuh()){
+            if (item.fall){
+                Debug.Log(item.fall);
                 score++;
             }
         }

@@ -5,22 +5,22 @@ public class PinFall : MonoBehaviour
 {
     public Vector3 posisiAwal;
     public Quaternion rotasiAwal;
+    public bool fall = false;
 
     void Start() {
         posisiAwal = gameObject.transform.position;
         rotasiAwal = gameObject.transform.rotation;
     }
 
-    public bool PinJatuh() {
-        if (gameObject.transform.rotation.z != 0){
-            return true;
+    private void OnTriggerEnter(Collider other) {
+        if (other.CompareTag("Ground")){
+            fall = true;
         }
-
-        return false;
     }
 
     public void ResetPin() {
         gameObject.transform.position = posisiAwal;
         gameObject.transform.rotation = rotasiAwal;
+        fall = false;
     }
 }

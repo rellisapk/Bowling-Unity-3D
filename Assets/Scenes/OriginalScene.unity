@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4366757, g: 0.48427194, b: 0.5645252, a: 1}
+  m_IndirectSpecularColor: {r: 0.43667546, g: 0.48427135, b: 0.5645225, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 34673120}
   - component: {fileID: 34673122}
   - component: {fileID: 34673121}
+  - component: {fileID: 34673123}
   m_Layer: 0
   m_Name: Cylinder (9)
   m_TagString: Untagged
@@ -247,6 +248,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   posisiAwal: {x: 0, y: 0, z: 0}
   rotasiAwal: {x: 0, y: 0, z: 0, w: 0}
+  fall: 0
+--- !u!65 &34673123
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 34673116}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0011925674, y: 0.0022652436, z: 0.0011925674}
+  m_Center: {x: 0, y: 0.00089138193, z: 0}
 --- !u!1 &76973469
 GameObject:
   m_ObjectHideFlags: 0
@@ -452,6 +467,7 @@ GameObject:
   - component: {fileID: 130514478}
   - component: {fileID: 130514480}
   - component: {fileID: 130514479}
+  - component: {fileID: 130514481}
   m_Layer: 0
   m_Name: Cylinder (5)
   m_TagString: Untagged
@@ -564,6 +580,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   posisiAwal: {x: 0, y: 0, z: 0}
   rotasiAwal: {x: 0, y: 0, z: 0, w: 0}
+  fall: 0
+--- !u!65 &130514481
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 130514474}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0011925674, y: 0.0025468364, z: 0.0011925674}
+  m_Center: {x: 0, y: 0.00075058447, z: 0}
 --- !u!1 &144235742
 GameObject:
   m_ObjectHideFlags: 0
@@ -578,6 +608,7 @@ GameObject:
   - component: {fileID: 144235746}
   - component: {fileID: 144235748}
   - component: {fileID: 144235747}
+  - component: {fileID: 144235749}
   m_Layer: 0
   m_Name: Cylinder (8)
   m_TagString: Untagged
@@ -690,6 +721,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   posisiAwal: {x: 0, y: 0, z: 0}
   rotasiAwal: {x: 0, y: 0, z: 0, w: 0}
+  fall: 0
+--- !u!65 &144235749
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 144235742}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0011925674, y: 0.0024584772, z: 0.0011925674}
+  m_Center: {x: 0, y: 0.00079476665, z: 0}
 --- !u!1 &156741685
 GameObject:
   m_ObjectHideFlags: 0
@@ -1049,7 +1094,7 @@ GameObject:
   - component: {fileID: 440080952}
   m_Layer: 0
   m_Name: BowlingAlley
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1061,13 +1106,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 440080948}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -0, y: 0, z: 39.9672}
   m_LocalScale: {x: 700.80225, y: 5000, z: 500}
   m_Children: []
   m_Father: {fileID: 1689245014}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!23 &440080950
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1363,6 +1408,7 @@ GameObject:
   - component: {fileID: 642758360}
   - component: {fileID: 642758362}
   - component: {fileID: 642758361}
+  - component: {fileID: 642758363}
   m_Layer: 0
   m_Name: Cylinder (6)
   m_TagString: Untagged
@@ -1475,6 +1521,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   posisiAwal: {x: 0, y: 0, z: 0}
   rotasiAwal: {x: 0, y: 0, z: 0, w: 0}
+  fall: 0
+--- !u!65 &642758363
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 642758356}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0011925674, y: 0.0023348634, z: 0.0011925674}
+  m_Center: {x: 0, y: 0.000856572, z: 0}
 --- !u!1 &695614437
 GameObject:
   m_ObjectHideFlags: 0
@@ -1698,6 +1758,7 @@ GameObject:
   - component: {fileID: 859482333}
   - component: {fileID: 859482335}
   - component: {fileID: 859482334}
+  - component: {fileID: 859482336}
   m_Layer: 0
   m_Name: Cylinder (2)
   m_TagString: Untagged
@@ -1810,6 +1871,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   posisiAwal: {x: 0, y: 0, z: 0}
   rotasiAwal: {x: 0, y: 0, z: 0, w: 0}
+  fall: 0
+--- !u!65 &859482336
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 859482329}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0011925674, y: 0.0025071364, z: 0.0011925674}
+  m_Center: {x: 0, y: 0.0007704341, z: 0}
 --- !u!1 &997785400
 GameObject:
   m_ObjectHideFlags: 0
@@ -1842,6 +1917,8 @@ MonoBehaviour:
   ronde: 0
   bola: {fileID: 452383964}
   score: {fileID: 1219602580}
+  scoringDelay: 2
+  waktuTerlewati: 0
 --- !u!4 &997785402
 Transform:
   m_ObjectHideFlags: 0
@@ -2100,6 +2177,7 @@ GameObject:
   - component: {fileID: 1197655529}
   - component: {fileID: 1197655531}
   - component: {fileID: 1197655530}
+  - component: {fileID: 1197655532}
   m_Layer: 0
   m_Name: Cylinder (7)
   m_TagString: Untagged
@@ -2212,6 +2290,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   posisiAwal: {x: 0, y: 0, z: 0}
   rotasiAwal: {x: 0, y: 0, z: 0, w: 0}
+  fall: 0
+--- !u!65 &1197655532
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1197655525}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0011925674, y: 0.0023604499, z: 0.0011925674}
+  m_Center: {x: 0, y: 0.0008437779, z: 0}
 --- !u!1 &1219292148
 GameObject:
   m_ObjectHideFlags: 0
@@ -2401,8 +2493,8 @@ GameObject:
   - component: {fileID: 1251483296}
   - component: {fileID: 1251483298}
   - component: {fileID: 1251483301}
-  - component: {fileID: 1251483300}
   - component: {fileID: 1251483299}
+  - component: {fileID: 1251483300}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
@@ -2501,20 +2593,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.00074957375, y: 0.0037999998, z: 0.00064249465}
   m_Center: {x: 0.000006712422, y: 0.00012400174, z: 0.000033542783}
---- !u!114 &1251483300
-MonoBehaviour:
+--- !u!65 &1251483300
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1251483294}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc64e2c3fb55ffe4a8573676442757ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  posisiAwal: {x: 0, y: 0, z: 0}
-  rotasiAwal: {x: 0, y: 0, z: 0, w: 0}
+  serializedVersion: 2
+  m_Size: {x: 0.0011925674, y: 0.0025542965, z: 0.0011925674}
+  m_Center: {x: 0, y: 0.00074685406, z: 0}
 --- !u!114 &1251483301
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2529,6 +2620,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   posisiAwal: {x: 0, y: 0, z: 0}
   rotasiAwal: {x: 0, y: 0, z: 0, w: 0}
+  fall: 0
 --- !u!1 &1271141396
 GameObject:
   m_ObjectHideFlags: 0
@@ -2543,6 +2635,7 @@ GameObject:
   - component: {fileID: 1271141400}
   - component: {fileID: 1271141402}
   - component: {fileID: 1271141401}
+  - component: {fileID: 1271141403}
   m_Layer: 0
   m_Name: Cylinder (4)
   m_TagString: Untagged
@@ -2655,6 +2748,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   posisiAwal: {x: 0, y: 0, z: 0}
   rotasiAwal: {x: 0, y: 0, z: 0, w: 0}
+  fall: 0
+--- !u!65 &1271141403
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1271141396}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0011925674, y: 0.0024492785, z: 0.0011925674}
+  m_Center: {x: 0, y: 0.0007993645, z: 0}
 --- !u!1 &1273059923
 GameObject:
   m_ObjectHideFlags: 0
@@ -3078,6 +3185,7 @@ GameObject:
   - component: {fileID: 1600076092}
   - component: {fileID: 1600076094}
   - component: {fileID: 1600076093}
+  - component: {fileID: 1600076095}
   m_Layer: 0
   m_Name: Cylinder (1)
   m_TagString: Untagged
@@ -3190,6 +3298,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   posisiAwal: {x: 0, y: 0, z: 0}
   rotasiAwal: {x: 0, y: 0, z: 0, w: 0}
+  fall: 0
+--- !u!65 &1600076095
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1600076088}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0011925674, y: 0.0025402298, z: 0.0011925674}
+  m_Center: {x: 0, y: 0.00075388834, z: 0}
 --- !u!1 &1689245013
 GameObject:
   m_ObjectHideFlags: 0
@@ -3562,6 +3684,7 @@ GameObject:
   - component: {fileID: 2142961151}
   - component: {fileID: 2142961153}
   - component: {fileID: 2142961152}
+  - component: {fileID: 2142961154}
   m_Layer: 0
   m_Name: Cylinder (3)
   m_TagString: Untagged
@@ -3674,3 +3797,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   posisiAwal: {x: 0, y: 0, z: 0}
   rotasiAwal: {x: 0, y: 0, z: 0, w: 0}
+  fall: 0
+--- !u!65 &2142961154
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2142961147}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0011925674, y: 0.002546703, z: 0.0011925674}
+  m_Center: {x: 0, y: 0.00075065135, z: 0}

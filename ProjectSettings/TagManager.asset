@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Pumpkin
+  - Ground
   layers:
   - Default
   - TransparentFX
