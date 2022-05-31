@@ -18,13 +18,8 @@ public class GameManager : MonoBehaviour
 
         bola.ResetBola();
 
-        Debug.Log("Ini Masuk Sini");
-
         score.ScoreAkhir();
-        Debug.Log("Ini Masuk Sini 2");
-
         score.ResetPinScore();
-        Debug.Log("Ini Masuk Sini 3");
 
     }
 

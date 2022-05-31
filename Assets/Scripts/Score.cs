@@ -1,9 +1,11 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class Score : MonoBehaviour
 {
     public int scoreTotal;
+    public Text scoreField;
     public PinFall[] pin;
 
     public GameObject pinContainer;
@@ -28,6 +30,9 @@ public class Score : MonoBehaviour
         }
 
         scoreTotal += score;
+
+        scoreField.text = scoreTotal.ToString();
+
     }
 
     public void ResetPinScore() {
