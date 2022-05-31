@@ -1,27 +1,41 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
+using TMPro;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
     public int ronde;
+    public int tries = 0;
 
     public Ball bola;
+    public TextMeshProUGUI scoreAkhir;
     public Score score;
     public int scoringDelay = 2;
     public float waktuTerlewati = 0;
 
     void NextRound() {
         if (ronde == 10){
+            GameOver();
            return;
         }
 
         ronde++;
 
         bola.ResetBola();
-
         score.ScoreAkhir();
-        score.ResetPinScore();
+
+        if (score.standingPins.Count > 0 && tries < 1){
+            tries++;
+            score.ResetStanding();
+        }else {
+            tries = 0;
+            ronde++;
+            score.ResetAll();
+        }
+        
+        waktuTerlewati = 0;
 
     }
 
@@ -37,5 +51,14 @@ public class GameManager : MonoBehaviour
         {
             waktuTerlewati += Time.deltaTime;
         }
+    }
+
+    [SerializeField] GameObject gameOver;
+
+    public void GameOver()
+    {
+        scoreAkhir.text = "Final Score : " + score.scoreTotal.ToString();
+        gameOver.SetActive(true);
+        Time.timeScale = 0f;
     }
 }

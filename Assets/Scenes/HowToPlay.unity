@@ -469,16 +469,16 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Hello! Welcome to Bowling Game. Bowling Game is a Drag and Release based
-    Bowling Ball Game. How to play it is as follows:
+  m_text: 'Hello! Welcome to Bowling Game. Bowling Game is a 3D Computer based Bowling
+    Ball Game. How to play it is as follows:
 
 
-    A  : To make ball in the
-    left
+    A  : To make ball in the left
 
-    D  : To make ball in the right
+    D 
+    : To make ball in the right
 
-    Space : To shoot the ball and strengths
+    Enter : Shoot The Ball
 
 
 '

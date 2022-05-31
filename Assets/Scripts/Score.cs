@@ -1,12 +1,13 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
-using System.Collections;
+using System.Collections.Generic;
 
 public class Score : MonoBehaviour
 {
     public int scoreTotal;
     public Text scoreField;
     public PinFall[] pin;
+    public List<PinFall> standingPins = new List<PinFall>();
 
     public GameObject pinContainer;
 
@@ -18,11 +19,23 @@ public class Score : MonoBehaviour
     public void ScoreAkhir() {
         int score = 0;
         
-        foreach (var item in pin)
-        {
-            if (item.fall){
+        if (standingPins.Count > 0){
+            foreach (var item in standingPins)
+            {
+                if (item.fall){
                 Debug.Log(item.fall);
                 score++;
+                }
+            }
+        }else {
+            foreach (var item in pin)
+            {
+                if (item.fall){
+                    Debug.Log(item.fall);
+                    score++;
+                }else {
+                    standingPins.Add(item);
+                }
             }
         }
 
@@ -31,14 +44,25 @@ public class Score : MonoBehaviour
         }
 
         scoreTotal += score;
-
-        scoreField.text = scoreTotal.ToString();
+        scoreField.text = "Score : " + scoreTotal.ToString();
 
     }
 
-    public void ResetPinScore() {
+    public void ResetStanding(){
         foreach (var item in pin)
         {
+            if(item.fall){
+                item.gameObject.SetActive(false);
+            }else {
+                item.ResetPin();
+            }
+        }
+    }
+    public void ResetAll() {
+        standingPins.Clear();
+        foreach (var item in pin)
+        {
+            item.gameObject.SetActive(true);
             item.ResetPin();
         }
     }
