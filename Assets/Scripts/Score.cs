@@ -23,7 +23,6 @@ public class Score : MonoBehaviour
             foreach (var item in standingPins)
             {
                 if (item.fall){
-                Debug.Log(item.fall);
                 score++;
                 }
             }
@@ -31,7 +30,7 @@ public class Score : MonoBehaviour
             foreach (var item in pin)
             {
                 if (item.fall){
-                    Debug.Log(item.fall);
+
                     score++;
                 }else {
                     standingPins.Add(item);

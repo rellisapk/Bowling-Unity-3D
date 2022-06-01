@@ -473,12 +473,13 @@ MonoBehaviour:
     Ball Game. How to play it is as follows:
 
 
-    A  : To make ball in the left
+    Arrow Left  : To make ball in
+    the left
 
-    D 
-    : To make ball in the right
+    Arrow Right  : To make ball in the right
 
-    Enter : Shoot The Ball
+    Enter : Shoot The
+    Ball
 
 
 '

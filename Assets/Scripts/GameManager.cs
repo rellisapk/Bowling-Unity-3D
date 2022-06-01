@@ -21,8 +21,6 @@ public class GameManager : MonoBehaviour
            return;
         }
 
-        ronde++;
-
         bola.ResetBola();
         score.ScoreAkhir();
 
